@@ -33,7 +33,7 @@
 		color: var(--main-color);
 	}
 
-	.fa-chevron-right
+	.fa-chevron-right, .fa-chevron-left
 	{
 		font-size: var(--fa-font);
 	}
@@ -52,6 +52,16 @@
 		background-repeat: no-repeat;
 	    background-size: auto;
 	    background-position: bottom right;
+	}
+
+	.vector-bg
+	{
+		background-image: url('img/mob-vector-hero.svg');
+		background-repeat: no-repeat;
+	    background-size: auto;
+	    background-position: bottom right;
+	    height: 75vh;
+	    margin-top: -18rem;
 	}
 
 	@media only screen and (max-width: 1024px)
@@ -73,20 +83,25 @@
 		letter-spacing: 0.265em;
 	}
 
-	@media screen (min-width: 1025px)
+	.title
+	{
+		font-weight: 600;
+		font-size: 6rem;
+		line-height: 105.3%;
+	}
+
+	@media only screen and (max-width: 1024px)
 	{
 		.title
 		{
-			font-weight: 600;
-			font-size: 6rem;
-			line-height: 105.3%;
+			font-size: 2rem;
 		}
+	}
 
-		.description
-		{
-			font-size: 24px;
-			line-height: 28px;
-		}
+	.description
+	{
+		font-size: 24px;
+		line-height: 28px;
 	}
 
 /*** ABOUT ME SECTION STYLING ***/
@@ -120,36 +135,46 @@
 	}
 
 /*** SERVICES SECTION STYLING ***/
+	.service-title
+	{
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 105.3%;
+		letter-spacing: 0.03em;
+	}
+
 	.services
 	{
 		height: 464px;
-		background-repeat: no-repeat;
 	}
 
 	.service-brand
 	{
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url('img/wp-dev.png');
-		transition-timing-function: ease-out;
-		transition: all 0.2s;
-	    -webkit-transition: all 0.2s;
+		background-repeat: no-repeat;
+	    background-size: cover;
 	}
 
 	.service-web
 	{
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url('img/web-dev.png');
+		background-repeat: no-repeat;
+	    background-size: cover;
 	}
 
 	.service-wp
 	{
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url('img/wp-dev.png');
+		background-repeat: no-repeat;
+	    background-size: cover;
 	}
 
 	.services:hover
 	{
 		border-radius: 0 72px 0px 0px;
 		background: var(--main-color);
-		transition: all 0.2s;
-	    -webkit-transition: all 0.2s;
+		transition: all 0.3s;
+	    -webkit-transition: all 0.3s;
 	    transition-timing-function: ease-in;
 	}
 
@@ -167,14 +192,6 @@
 	.services:hover p
 	{
 		opacity: 1;
-	}
-
-	.service-title
-	{
-		font-weight: 500;
-		font-size: 36px;
-		line-height: 105.3%;
-		letter-spacing: 0.03em;
 	}
 
 	.service-link
@@ -202,6 +219,39 @@
 	.service-link:hover .fa-inverse
 	{
 		color: white;
+	}
+
+	/*** SLIDER STYLING ***/
+	.slider {
+	    width: 80%;
+	    /*margin: 100px auto;*/
+	}
+
+	.slick-slide {
+	  margin: 0px 20px;
+	}
+
+	.slick-slide img {
+	  width: 100%;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+	  color: black;
+	}
+
+
+	.slick-slide {
+	  transition: all ease-in-out .3s;
+	  opacity: .2;
+	}
+	
+	.slick-active {
+	  opacity: .5;
+	}
+
+	.slick-current {
+	  opacity: 1;
 	}
 
 /*** PORTFOLIO SECTION STYLING ***/
@@ -459,6 +509,14 @@
 		.blog-link
 		{
 		    top: 285px;
+		}
+	}
+
+	@media only screen and (max-width: 768px)
+	{
+		.blog-link
+		{
+		    top: 35%;
 		}
 	}
 
