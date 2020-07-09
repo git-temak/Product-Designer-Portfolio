@@ -61,7 +61,15 @@
 	    background-size: auto;
 	    background-position: bottom right;
 	    height: 75vh;
-	    margin-top: -18rem;
+	    margin-top: -35rem;
+	}
+
+	@media only screen and (max-width: 444px)
+	{
+		.vector-bg
+		{
+		    height: 120vh;
+		}
 	}
 
 	@media only screen and (max-width: 1024px)
@@ -94,7 +102,7 @@
 	{
 		.title
 		{
-			font-size: 2rem;
+			font-size: 3rem;
 		}
 	}
 
@@ -224,7 +232,6 @@
 	/*** SLIDER STYLING ***/
 	.slider {
 	    width: 80%;
-	    /*margin: 100px auto;*/
 	}
 
 	.slick-slide {
@@ -240,7 +247,6 @@
 	  color: black;
 	}
 
-
 	.slick-slide {
 	  transition: all ease-in-out .3s;
 	  opacity: .2;
@@ -252,6 +258,18 @@
 
 	.slick-current {
 	  opacity: 1;
+	}
+
+	.slick-prev, .slick-next {
+      top: -10%;
+	}
+
+	.slick-next {
+	    left: 12%;
+	}
+
+	.slick-prev:before, .slick-next:before {
+    font-size: 50px;
 	}
 
 /*** PORTFOLIO SECTION STYLING ***/
@@ -516,7 +534,7 @@
 	{
 		.blog-link
 		{
-		    top: 35%;
+		    top: 33%;
 		}
 	}
 
