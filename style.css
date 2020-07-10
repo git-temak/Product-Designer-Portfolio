@@ -231,7 +231,7 @@
 
 	/*** SLIDER STYLING ***/
 	.slider {
-	    width: 80%;
+	    /*width: 80%;*/
 	}
 
 	.slick-slide {
@@ -262,14 +262,21 @@
 
 	.slick-prev, .slick-next {
       top: -10%;
+      left: 3%;
+      margin-top: 5%;
 	}
 
 	.slick-next {
-	    left: 12%;
+	  left: 20%;
 	}
 
 	.slick-prev:before, .slick-next:before {
     font-size: 50px;
+	}
+
+	.w-45
+	{
+		width: 45% !important;
 	}
 
 /*** PORTFOLIO SECTION STYLING ***/
@@ -379,6 +386,22 @@
 		{
 			width: 93%;
 		}
+	}
+
+	.mob-project
+	{
+		height: 450px;
+		width: 45vh !important;
+	    border-radius: 0 46px 0 0;
+	    background-image: url(img/stryker.png);
+        background-position: center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	}
+
+	.mob-project2
+	{
+		background-image: url(img/airtel-man.png);
 	}
 
 /*** GALLERY SECTION STYLING ***/
