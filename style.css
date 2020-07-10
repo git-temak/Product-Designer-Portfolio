@@ -545,6 +545,13 @@
 	    left: 4%;
 	}
 
+	.mob-blog-link
+	{
+		position: absolute;
+	    top: 57%;
+	    left: 4%;
+	}
+
 	@media only screen and (max-width: 1024px)
 	{
 		.blog-link
@@ -567,7 +574,7 @@
 		text-decoration: none;
 	}
 
-	.blog-link p
+	.blog-link p, .mob-blog-link p
 	{
 		font-weight: 600;
 		font-size: 12px;
