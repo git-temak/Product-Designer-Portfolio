@@ -38,6 +38,21 @@
 		font-size: var(--fa-font);
 	}
 
+/*** HEADER NAV STYLING ***/
+	.navbar-brand, .navbar-nav
+	{
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: 0.3em;
+	}
+
+	.navbar-light .navbar-nav .nav-link
+	{
+		color: black;
+		font-weight: 500;
+		letter-spacing: 0.003em;
+	}
+
 /*** HERO SECTION STYLING ***/
 	.hero
 	{
@@ -230,10 +245,6 @@
 	}
 
 	/*** SLIDER STYLING ***/
-	.slider {
-	    /*width: 80%;*/
-	}
-
 	.slick-slide {
 	  margin: 0px 20px;
 	}
@@ -279,15 +290,9 @@
 		width: 45% !important;
 	}
 
-/*** PORTFOLIO SECTION STYLING ***/
-	.projects
-	{
-	    /*position:relative;*/
-	}
-	
+/*** PORTFOLIO SECTION STYLING ***/	
 	.projects img
 	{
-	    /*vertical-align:top;*/
 	    filter: grayscale(100%);
 	}
 
@@ -411,13 +416,13 @@
 	  column-gap: 1em;
 	}
 
-	/*@media(min-width: 30em) {
+	@media(max-width: 444px) {
 	  #masonry {
-	    column-count: 3;
+	    column-count: 1;
 	    column-gap: 1em;
 	  }
 	}
-	}*/
+	}
 
 	.item {
 	  display: inline-block;
@@ -548,7 +553,7 @@
 	.mob-blog-link
 	{
 		position: absolute;
-	    top: 57%;
+	    top: 47%;
 	    left: 4%;
 	}
 
